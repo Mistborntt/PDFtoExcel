@@ -197,19 +197,31 @@ def extract_data_notice(pdf_path, excel_path):
         table2 = page2.extract_tables()
 
         # 自由竞价开始时间
-        start_time = table2[0][1][1]
+        start_time = table2[0][0][1]
 
         # 自由竞价结束时间
-        end_time = table2[0][2][1]
+        end_time = table2[0][1][1]
 
         # 延时周期
-        delay_period = table2[0][3][1]
+        delay_period = table2[0][2][1]
 
         # 起始价
-        starting_price = table2[0][4][1]
+        starting_price = table2[0][3][1]
 
         # 加价幅度
-        price_increase_range = table2[0][5][1]
+        price_increase_range = table2[0][4][1]
+        
+        # 上面是跨页表格，以下不跨页  
+        if len(table2) == 6:
+            start_time = table2[0][1][1]
+
+            end_time = table2[0][2][1]
+
+            delay_period = table2[0][3][1]
+
+            starting_price = table2[0][4][1]
+
+            price_increase_range = table2[0][5][1]
 
         # 数据列表
         data_list = [['项目名称', prj_name], ['出让方主体名称', mainbody], ['下属机构', sub], ['交易基准日', benchmark_date], ['资产笔数（笔）', asset_amount],
