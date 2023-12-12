@@ -63,7 +63,7 @@ def extract_data_result(pdf_path, excel_path):
         df.to_excel(excel_path, index=False)
 
 if __name__ == '__main__':
-    pdf_path = r'/Users/tt/Desktop/5.pdf'
-    excel_path = r'/Users/tt/Desktop/5.xlsx'
+    pdf_path = r'./PDF样例/转让结果1.pdf'
+    excel_path = r'/Users/tt/Desktop/转让结果1.xlsx'
 
     extract_data_result(pdf_path, excel_path)
