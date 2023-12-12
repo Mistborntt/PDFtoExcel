@@ -1,5 +1,6 @@
 import pandas as pd
 import pdfplumber
+import os
 import re
 from datetime import datetime
 
@@ -63,6 +64,10 @@ def extract_data_result(pdf_path, excel_path):
         df.to_excel(excel_path, index=False)
 
 if __name__ == '__main__':
+    # 将当前工作目录设置为脚本所在的目录
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    os.chdir(script_dir)
+
     pdf_path = r'./PDF样例/转让结果1.pdf'
     excel_path = r'/Users/tt/Desktop/转让结果1.xlsx'
 
