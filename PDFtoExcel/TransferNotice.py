@@ -212,7 +212,7 @@ def extract_data_notice(pdf_path, excel_path):
         price_increase_range = table2[0][4][1]
         
         # 上面是跨页表格，以下不跨页  
-        if len(table2) == 6:
+        if len(table2[0]) == 6:
             start_time = table2[0][1][1]
 
             end_time = table2[0][2][1]
