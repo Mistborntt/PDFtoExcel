@@ -224,7 +224,7 @@ def extract_data_notice(pdf_path, excel_path):
             price_increase_range = table2[0][5][1]
 
         # 数据列表
-        data_list = [['项目名称', prj_name], ['出让方主体名称', mainbody], ['下属机构', sub], ['交易基准日', benchmark_date], ['资产笔数（笔）', asset_amount],
+        data_list = [['项目名称', prj_name], ['出让方主体名称', mainbody], ['下属机构', sub], ['交易基准日', benchmark_date], ['资产笔数（笔）', asset_amount], ['借款人户数', borrower_num],
                      ['加权平均逾期天数', overdue_days], ['单一借款人最高未偿本息余额', max_principal_interest], ['借款人加权平均年龄', avg_age],
                      ['未偿本金总额（元）', principal], ['未偿利息总额（元）', interest], ['未偿本息总额（元）', principal_interest], ['其他费用（元）', other_fees],
                      ['借款人平均未偿本息余额（元）', avg_principal_interest], ['借款人加权平均授信额度（元）', avg_credit_line], ['次级（笔）', secondary],
