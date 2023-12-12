@@ -2,7 +2,7 @@
 
 这里抓取个贷或信用卡转让公告PDF中不良贷款基本信息、时间安排和转让方式的数据，以及转让结果PDF中的项目名称等数据，并以Excel的形式导出。
 
-代码使用Python语言，用到了pandas、pdfplumber、os、re和datetime库，其中pandas和pdfplumber库需要pip install下载，推荐IDE使用PyCharm。
+代码使用Python语言，用到了pandas、pdfplumber、os、re和datetime库，其中pandas和pdfplumber库需要pip install下载，IDE推荐使用PyCharm。
 
 其中：
 
