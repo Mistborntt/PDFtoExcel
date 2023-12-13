@@ -1,5 +1,5 @@
 # 内容介绍
-![银登网](https://badgen.net/badge/银登网/Python/cyan?icon=github) ![PDF](https://badgen.net/github/PDF/Excel/cyan?color=green)
+![银登网](https://badgen.net/badge/银登网/Python/cyan?icon=github) ![PDF](https://badgen.net/github/PDF/Excel/PDFtoExcel?color=green)
 
 这里抓取个贷或信用卡转让公告PDF中不良贷款基本信息、时间安排和转让方式的数据，以及转让结果PDF中的项目名称等数据，并以Excel的形式导出。
 
