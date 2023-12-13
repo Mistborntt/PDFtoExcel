@@ -1,4 +1,5 @@
 # 内容介绍
+![weibo](https://badgen.net/badge/weibo/NLP/cyan?icon=github)
 
 这里抓取个贷或信用卡转让公告PDF中不良贷款基本信息、时间安排和转让方式的数据，以及转让结果PDF中的项目名称等数据，并以Excel的形式导出。
 
